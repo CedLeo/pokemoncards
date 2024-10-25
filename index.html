@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Play:wght@400;700&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Racing+Sans+One&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <title>Pokemon Cards</title>
+</head>
+<body>
+    <header><h1>Pokemon Image Selector</h1></header>
+    <main>
+        <div class="input-wrapper">
+            <form action="#">
+                <div class="choose-image-group">
+                    <input type="file" accept="img/jpeg, img/png, img/jpg" id="input-file" class="select-images">
+                </div>
+                <img src="pics/charmander.png" alt="" class="uploaded-pic" id="uploaded-pic">
+                <div class="select-card-wrapper">
+                    <button class="select" id="sel-c1">Select Image for the 1st card</button>
+                    <button class="select" id="sel-c2">Select Image for the 2nd card</button>
+                    <button class="select" id="sel-c3">Select Image for the 3rd card</button>
+                </div>
+                <div class="input-forms">
+                    <label for="title">Enter Card title here</label>
+                    <input type="text" name="title" id="title" placeholder="Name of the pokemon">
+                    <label for="description">Enter Card Description here</label>
+                    <input type="text" name="description" id="description" placeholder="e.g. What type, Who is this">    
+                </div>
+                <input type="submit" id="submit">
+            </form>
+        </div>
+        <div class="card-wrapper">
+            <div class="card-list">
+                <div class="card" id="card1">
+                    <img src="pics/charmander.png" alt="charmander" class="card-pic pic1" id="pic1">
+                    <div class="card-title"><h3>Charmander</h3></div>
+                    <div class="card-description"><p>A fire type pokemon</p></div>
+                </div>
+                <div class="card" id="card2">
+                    <img src="pics/pikachu.png" alt="charmander" class="card-pic pic2" id="pic2">
+                    <div class="card-title"><h3>Pikachu</h3></div>
+                    <div class="card-description"><p>Classic pokemon</p></div>
+                </div>
+                <div class="card" id="card3">
+                    <img src="pics/sandshrew.png" alt="charmander" class="card-pic pic3" id="pic3">
+                    <div class="card-title"><h3>Sandshrew</h3></div>
+                    <div class="card-description"><p>A ground type pokemon</p></div>
+                </div>
+            </div>
+        </div>
+    </main>
+    <footer>&#169;Ced 2024</footer>
+    <script src="script.js"></script>
+</body>
+</html>
